@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mebleNERO | Meble na wymiar, Bełżyce</title>
+<meta name="description" content="mebleNERO, producent mebli na wymiar w Bełżycach. Meble kuchenne, szafy wnękowe, garderoby, meble łazienkowe i inne zabudowy. Pomiar, wycena i projekt gratis. Tel. 530 205 026.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          jasny: '#f4f4f3',
+          czarny: '#141414',
+          'czarny-raised': '#202020',
+          'ink-soft': '#545657',
+          czerwien: '#e30613',
+          'czerwien-dark': '#c00410',
+          'czerwien-light': '#ff4b4b',
+        },
+        fontFamily: {
+          sans: ['"Instrument Sans"', 'sans-serif'],
+          display: ['"Familjen Grotesk"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-white text-czarny">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-[84rem] mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between gap-4">
+    <a href="index.html" class="focus-ring rounded-md brand-name text-xl md:text-2xl leading-none whitespace-nowrap">meble<span class="text-czerwien">NERO</span></a>
+    <nav class="hidden md:flex items-center gap-8 text-[0.95rem] font-medium" aria-label="Główna nawigacja">
+      <a href="uslugi.html" class="nav-link focus-ring">Usługi</a>
+      <a href="#realizacje" class="nav-link focus-ring">Realizacje</a>
+      <a href="#opinie" class="nav-link focus-ring">Opinie</a>
+      <a href="#kontakt" class="nav-link focus-ring">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a href="tel:530205026" class="btn btn-dark px-5 py-2.5 text-sm">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        <span class="hidden sm:inline">530 205 026</span><span class="sm:hidden">Zadzwoń</span>
+      </a>
+      <button id="menu-toggle" class="md:hidden btn btn-outline w-11 h-11 !p-0" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="mobile-menu md:hidden absolute left-0 right-0 top-full bg-white border-b border-black/10 px-5 py-4" aria-label="Menu mobilne">
+    <ul class="flex flex-col text-lg font-semibold">
+      <li><a href="uslugi.html" class="block py-3 border-b border-black/5">Usługi</a></li>
+      <li><a href="#realizacje" class="block py-3 border-b border-black/5">Realizacje</a></li>
+      <li><a href="#opinie" class="block py-3 border-b border-black/5">Opinie</a></li>
+      <li><a href="#kontakt" class="block py-3">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="relative overflow-hidden pt-28 md:pt-36 pb-20 md:pb-28 px-5 md:px-8">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-16 items-center">
+    <div>
+      <h1 class="heading-xl">Kuchnie, szafy i&nbsp;garderoby <span class="red-block">na wymiar</span></h1>
+      <p class="lead mt-6 max-w-xl">Pracownia mebli w&nbsp;Bełżycach. Mierzymy, projektujemy, wykonujemy i&nbsp;montujemy meble dopasowane do Twojego domu. Pomiar, wycena i&nbsp;projekt robimy za darmo.</p>
+      <div class="mt-9 flex flex-wrap gap-3">
+        <a href="tel:530205026" class="btn btn-red px-6 py-4 text-base">
+          <i data-lucide="phone" class="w-5 h-5"></i> Zadzwoń: 530 205 026
+        </a>
+        <a href="#wycena" class="btn btn-outline px-6 py-4 text-base">Darmowa wycena</a>
+      </div>
+      <ul class="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-[0.95rem] text-ink-soft">
+        <li class="flex items-center gap-2"><i data-lucide="star" class="w-4 h-4 text-czerwien fill-current"></i><strong class="text-czarny">5,0</strong> w&nbsp;Google (7 opinii)</li>
+        <li class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-czerwien"></i>Pn–Pt 8:00–18:00</li>
+        <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-czerwien"></i>Bełżyce, lubelskie</li>
+      </ul>
+    </div>
+
+    <div class="hero-photo isolate">
+      <div class="photo relative">
+        <img src="images/kuchnia-wyspa.webp" alt="Kuchnia z czarną wyspą, blatem z drewna i zabudową wysoką w dekorze orzecha" width="520" height="315" fetchpriority="high">
+        <span class="hero-caption">Realizacja: kuchnia z&nbsp;wyspą</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USŁUGI ============ -->
+<section id="uslugi" class="relative py-20 md:py-28 px-5 md:px-8 bg-jasny border-y border-black/5">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 reveal">
+      <div class="max-w-2xl">
+        <h2 class="heading-lg">Co dla Ciebie zrobimy</h2>
+        <p class="lead mt-4">Każdy mebel robimy pod konkretne wnętrze i&nbsp;Twoje potrzeby. Najczęściej są to kuchnie, szafy i&nbsp;garderoby, ale wykonujemy też nietypowe zabudowy.</p>
+      </div>
+      <a href="uslugi.html" class="text-link shrink-0">Wszystkie usługi <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+      <a href="uslugi.html#kuchnie" class="surface card-link p-6 md:p-7 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="cooking-pot" class="w-5 h-5"></i></span>
+        <h3 class="heading-md mt-5">Meble kuchenne</h3>
+        <p class="mt-2 text-ink-soft">Fronty drewniane i&nbsp;MDF w&nbsp;lakierze, fornirze lub folii. Okucia Blum i&nbsp;Hettich, montaż oświetlenia i&nbsp;podłączenie AGD.</p>
+        <span class="text-link mt-auto pt-5">Zobacz więcej <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+      <a href="uslugi.html#szafy" class="surface card-link p-6 md:p-7 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="shirt" class="w-5 h-5"></i></span>
+        <h3 class="heading-md mt-5">Szafy wnękowe i&nbsp;garderoby</h3>
+        <p class="mt-2 text-ink-soft">Drzwi przesuwne, łamane lub otwierane klasycznie. Wnętrze zaplanowane tak, żeby wykorzystać każdy centymetr.</p>
+        <span class="text-link mt-auto pt-5">Zobacz więcej <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+      <a href="uslugi.html#lazienkowe" class="surface card-link p-6 md:p-7 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="bath" class="w-5 h-5"></i></span>
+        <h3 class="heading-md mt-5">Meble łazienkowe</h3>
+        <p class="mt-2 text-ink-soft">Szafki pod umywalkę, słupki i&nbsp;zabudowy dopasowane do wymiarów łazienki.</p>
+        <span class="text-link mt-auto pt-5">Zobacz więcej <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+      <a href="uslugi.html#biurowe" class="surface card-link p-6 md:p-7 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="briefcase" class="w-5 h-5"></i></span>
+        <h3 class="heading-md mt-5">Meble biurowe i&nbsp;sklepowe</h3>
+        <p class="mt-2 text-ink-soft">Biurka, regały, lady i&nbsp;zabudowy do biura, gabinetu albo lokalu usługowego.</p>
+        <span class="text-link mt-auto pt-5">Zobacz więcej <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+      <a href="uslugi.html#rtv" class="surface card-link p-6 md:p-7 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="tv" class="w-5 h-5"></i></span>
+        <h3 class="heading-md mt-5">Szafki RTV</h3>
+        <p class="mt-2 text-ink-soft">Szafki i&nbsp;zabudowy pod telewizor, dopasowane do salonu i&nbsp;sprzętu, który masz.</p>
+        <span class="text-link mt-auto pt-5">Zobacz więcej <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+      <a href="uslugi.html#renowacja" class="surface card-link p-6 md:p-7 flex flex-col reveal">
+        <span class="icon-chip"><i data-lucide="hammer" class="w-5 h-5"></i></span>
+        <h3 class="heading-md mt-5">Renowacja mebli</h3>
+        <p class="mt-2 text-ink-soft">Odnawiamy stare meble, którym warto dać drugie życie.</p>
+        <span class="text-link mt-auto pt-5">Zobacz więcej <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DLACZEGO MY ============ -->
+<section class="relative py-20 md:py-28 px-5 md:px-8">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-16 items-center">
+    <div class="relative overflow-hidden bg-czarny text-white on-dark rounded-md p-8 md:p-12 reveal" style="box-shadow: var(--shadow-2)">
+      <div class="wood-dark"></div>
+      <div class="relative">
+        <div class="flex items-end gap-5">
+          <span class="font-display font-bold text-7xl md:text-8xl tracking-tight leading-none">5,0</span>
+          <div class="pb-2">
+            <div class="flex gap-0.5 text-czerwien" aria-label="5 na 5 gwiazdek">
+              <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <p class="text-sm text-[#b7b7b7] mt-1">7 opinii w&nbsp;Google</p>
+          </div>
+        </div>
+        <ul class="sq-list mt-10 space-y-3 text-lg">
+          <li>Wieloletnie doświadczenie</li>
+          <li>Kwalifikacje zawodowe poparte dyplomami</li>
+          <li>Pomiar, wycena i&nbsp;projekt gratis</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2 class="heading-lg reveal">Za co klienci nas polecają</h2>
+      <p class="lead mt-4 reveal">Słowa osób, dla których robiliśmy meble.</p>
+      <div class="mt-10 grid sm:grid-cols-2 gap-x-8 gap-y-9">
+        <div class="reveal">
+          <i data-lucide="timer" class="w-6 h-6 text-czerwien"></i>
+          <h3 class="font-display font-bold text-xl mt-3 tracking-tight">Szybko</h3>
+          <p class="mt-2 text-ink-soft">„Szybkie wykonanie projektu i&nbsp;montażu.”</p>
+        </div>
+        <div class="reveal">
+          <i data-lucide="badge-check" class="w-6 h-6 text-czerwien"></i>
+          <h3 class="font-display font-bold text-xl mt-3 tracking-tight">Solidnie</h3>
+          <p class="mt-2 text-ink-soft">„Meble piękne, solidne. Jestem bardzo zadowolona z&nbsp;efektu końcowego.”</p>
+        </div>
+        <div class="reveal">
+          <i data-lucide="wallet" class="w-6 h-6 text-czerwien"></i>
+          <h3 class="font-display font-bold text-xl mt-3 tracking-tight">W&nbsp;dobrej cenie</h3>
+          <p class="mt-2 text-ink-soft">„Świetna cena, szybka realizacja i&nbsp;skuteczny montaż.”</p>
+        </div>
+        <div class="reveal">
+          <i data-lucide="repeat" class="w-6 h-6 text-czerwien"></i>
+          <h3 class="font-display font-bold text-xl mt-3 tracking-tight">Klienci wracają</h3>
+          <p class="mt-2 text-ink-soft">„Wszystko bardzo dobrze wykonane. Następne meble też zamówię.”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DARMOWA WYCENA ============ -->
+<section id="wycena" class="relative bg-czarny text-white on-dark overflow-hidden">
+  <div class="wood-dark"></div>
+  <div class="relative h-2 w-full bg-czerwien" aria-hidden="true"></div>
+  <div class="relative max-w-7xl mx-auto px-5 md:px-8 py-20 md:py-24 grid lg:grid-cols-[1.2fr_1fr] gap-10 items-center">
+    <div class="reveal">
+      <h2 class="heading-lg">Pomiar, wycena i&nbsp;projekt <span class="red-block">gratis</span></h2>
+      <p class="lead mt-5 max-w-2xl">Zadzwoń i&nbsp;umów pomiar. Przyjedziemy, doradzimy materiały, fronty i&nbsp;okucia, przygotujemy projekt i&nbsp;podamy cenę. Bez zobowiązań.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row lg:flex-col gap-3 lg:items-end reveal">
+      <a href="tel:530205026" class="btn btn-red px-7 py-4 text-base"><i data-lucide="phone" class="w-5 h-5"></i> 530 205 026</a>
+      <a href="mailto:meblenero@gmail.com?subject=Wycena%20mebli" class="btn btn-outline px-7 py-4 text-base"><i data-lucide="mail" class="w-5 h-5"></i> Napisz mailem</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REALIZACJE ============ -->
+<section id="realizacje" class="py-20 md:py-28 px-5 md:px-8">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-14 items-center">
+    <button type="button" class="gallery-item aspect-[520/315] reveal" data-full="images/kuchnia-wyspa.webp" data-caption="Kuchnia z czarną wyspą i zabudową wysoką w dekorze orzecha" aria-label="Powiększ zdjęcie: kuchnia z czarną wyspą">
+      <img src="images/kuchnia-wyspa.webp" alt="Kuchnia z czarną wyspą, blatem z drewna i zabudową wysoką w dekorze orzecha" width="520" height="315" loading="lazy">
+      <span class="zoom-hint" aria-hidden="true"><i data-lucide="expand" class="w-4 h-4"></i></span>
+    </button>
+    <div class="reveal">
+      <h2 class="heading-lg">Realizacje</h2>
+      <p class="lead mt-4">Kuchnia otwarta na salon: czarne fronty, wyspa z&nbsp;barem i&nbsp;drewnianym blatem oraz ściana zabudowy wysokiej z&nbsp;piekarnikami w&nbsp;słupku.</p>
+      <ul class="sq-list mt-6 space-y-2 text-ink-soft">
+        <li>Wyspa z&nbsp;miejscem na hokery</li>
+        <li>Zabudowa wysoka od podłogi do sufitu</li>
+        <li>Sprzęt AGD w&nbsp;zabudowie</li>
+      </ul>
+      <p class="mt-8 text-[0.95rem] text-ink-soft">Chcesz zobaczyć więcej naszych kuchni i&nbsp;szaf? Zadzwoń, pokażemy zdjęcia podobnych realizacji.</p>
+      <a href="tel:530205026" class="text-link mt-3">530 205 026 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPINIE ============ -->
+<section id="opinie" class="relative bg-czarny text-white on-dark py-20 md:py-28 px-5 md:px-8 overflow-hidden">
+  <div class="wood-dark"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-[1fr_auto] gap-8 items-end mb-12 reveal">
+      <div class="max-w-2xl">
+        <h2 class="heading-lg">Co mówią klienci</h2>
+        <p class="lead mt-4">Opinie z&nbsp;naszej wizytówki w&nbsp;Google.</p>
+      </div>
+      <div class="flex items-center gap-5">
+        <span class="font-display font-bold text-6xl md:text-7xl tracking-tight leading-none">5,0</span>
+        <div>
+          <div class="flex gap-0.5 text-czerwien" aria-label="5 na 5 gwiazdek">
+            <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
+          </div>
+          <p class="text-sm text-[#b7b7b7] mt-1">7 opinii, same piątki</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews reveal" id="reviews-track" tabindex="0" aria-label="Opinie klientów, przewiń w poziomie">
+      <blockquote class="review">
+        <p>„Serdecznie polecam. Meble łazienkowe na medal, świetna cena, szybka realizacja i&nbsp;skuteczny montaż.”</p>
+        <footer class="mt-4 text-sm text-czerwien-light font-semibold">Patrycja K.</footer>
+      </blockquote>
+      <blockquote class="review">
+        <p>„Meble piękne, solidne. Jestem bardzo zadowolona z&nbsp;efektu końcowego. Bardzo dobry kontakt. Szybkie wykonanie projektu i&nbsp;montażu. Polecam serdecznie.”</p>
+        <footer class="mt-4 text-sm text-czerwien-light font-semibold">Agnieszka</footer>
+      </blockquote>
+      <blockquote class="review">
+        <p>„Wszystko bardzo dobrze wykonane. Następne meble też zamówię.”</p>
+        <footer class="mt-4 text-sm text-czerwien-light font-semibold">Krzysztof C.</footer>
+      </blockquote>
+    </div>
+    <div class="reviews-controls md:hidden" aria-label="Przewijanie opinii">
+      <button type="button" class="lb-btn !static reviews-prev" aria-label="Poprzednia opinia"><i data-lucide="chevron-left" class="w-5 h-5"></i></button>
+      <div class="reviews-dots" id="reviews-dots"></div>
+      <button type="button" class="lb-btn !static reviews-next" aria-label="Następna opinia"><i data-lucide="chevron-right" class="w-5 h-5"></i></button>
+    </div>
+    <div class="mt-8 reveal">
+      <a href="https://www.google.com/maps/search/?api=1&query=mebleNERO%20Be%C5%82%C5%BCyce" target="_blank" rel="noopener" class="text-link">Wszystkie opinie w&nbsp;Google <i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section id="kontakt" class="py-20 md:py-28 px-5 md:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-12 reveal">
+      <h2 class="heading-lg">Porozmawiajmy o&nbsp;Twoich meblach</h2>
+      <p class="lead mt-4">Najszybciej złapiesz nas telefonicznie od poniedziałku do piątku. Zdjęcia wnętrza i&nbsp;wymiary wygodnie wysłać mailem.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-[1fr_1.25fr] gap-5">
+      <div class="surface p-6 md:p-8 reveal">
+        <ul class="space-y-6">
+          <li>
+            <a href="tel:530205026" class="group flex items-start gap-4 rounded-md focus-ring">
+              <span class="icon-chip shrink-0"><i data-lucide="phone" class="w-5 h-5"></i></span>
+              <span><span class="block text-sm text-ink-soft">Telefon</span><span class="block font-display font-bold text-2xl tracking-tight group-hover:text-czerwien-dark transition-colors">530 205 026</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:meblenero@gmail.com" class="group flex items-start gap-4 rounded-md focus-ring">
+              <span class="icon-chip shrink-0"><i data-lucide="mail" class="w-5 h-5"></i></span>
+              <span class="min-w-0"><span class="block text-sm text-ink-soft">E-mail</span><span class="block font-semibold text-lg break-all group-hover:text-czerwien-dark transition-colors">meblenero@gmail.com</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Miko%C5%82aja+Kopernika+103,+24-200+Be%C5%82%C5%BCyce" target="_blank" rel="noopener" class="group flex items-start gap-4 rounded-md focus-ring">
+              <span class="icon-chip shrink-0"><i data-lucide="map-pin" class="w-5 h-5"></i></span>
+              <span><span class="block text-sm text-ink-soft">Adres</span><span class="block font-semibold text-lg group-hover:text-czerwien-dark transition-colors">Mikołaja Kopernika 103, 24-200 Bełżyce</span><span class="block text-sm text-czerwien-dark font-semibold mt-1">Wyznacz trasę</span></span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="mt-8 pt-6 border-t border-black/10">
+          <h3 class="font-display font-bold text-lg tracking-tight flex items-center gap-2"><i data-lucide="clock" class="w-5 h-5 text-czerwien"></i>Godziny pracy</h3>
+          <div class="mt-3 text-[0.98rem]">
+            <div class="hours-row" data-day="1"><span>Poniedziałek</span><span>8:00–18:00</span></div>
+            <div class="hours-row" data-day="2"><span>Wtorek</span><span>8:00–18:00</span></div>
+            <div class="hours-row" data-day="3"><span>Środa</span><span>8:00–18:00</span></div>
+            <div class="hours-row" data-day="4"><span>Czwartek</span><span>8:00–18:00</span></div>
+            <div class="hours-row" data-day="5"><span>Piątek</span><span>8:00–18:00</span></div>
+            <div class="hours-row" data-day="6"><span>Sobota</span><span>Zamknięte</span></div>
+            <div class="hours-row" data-day="0"><span>Niedziela</span><span>Zamknięte</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="photo min-h-[340px] lg:min-h-0 reveal">
+        <iframe title="Mapa dojazdu: Mikołaja Kopernika 103, Bełżyce" src="https://maps.google.com/maps?q=Miko%C5%82aja%20Kopernika%20103%2C%2024-200%20Be%C5%82%C5%BCyce&z=15&output=embed" class="w-full h-full min-h-[340px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-czarny text-[#b7b7b7] on-dark">
+  <div class="h-1.5 w-full bg-czerwien" aria-hidden="true"></div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 py-12 grid md:grid-cols-3 gap-8 text-[0.95rem]">
+    <div>
+      <p class="brand-name text-2xl text-white">meble<span class="text-czerwien-light">NERO</span></p>
+      <p class="mt-2">Meble na wymiar: kuchnie, szafy, garderoby i&nbsp;nietypowe zabudowy. Bełżyce.</p>
+    </div>
+    <div>
+      <p class="text-white font-semibold">Kontakt</p>
+      <p class="mt-2"><a href="tel:530205026" class="hover:text-czerwien-light transition-colors">530 205 026</a><br><a href="mailto:meblenero@gmail.com" class="hover:text-czerwien-light transition-colors">meblenero@gmail.com</a><br>Mikołaja Kopernika 103, 24-200 Bełżyce</p>
+    </div>
+    <div>
+      <p class="text-white font-semibold">Strona</p>
+      <p class="mt-2 flex flex-col gap-1">
+        <a href="uslugi.html" class="hover:text-czerwien-light transition-colors w-fit">Usługi</a>
+        <a href="#realizacje" class="hover:text-czerwien-light transition-colors w-fit">Realizacje</a>
+        <a href="#opinie" class="hover:text-czerwien-light transition-colors w-fit">Opinie</a>
+        <a href="#kontakt" class="hover:text-czerwien-light transition-colors w-fit">Kontakt</a>
+      </p>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <p class="max-w-7xl mx-auto px-5 md:px-8 py-5 text-sm">© <span id="year">2026</span> mebleNERO, Bełżyce</p>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+  <button id="lb-close" class="lb-btn top-4 right-4" aria-label="Zamknij"><i data-lucide="x" class="w-5 h-5"></i></button>
+  <button id="lb-prev" class="lb-btn left-3 md:left-6 top-[calc(50%-1.5rem)]" aria-label="Poprzednie zdjęcie"><i data-lucide="chevron-left" class="w-5 h-5"></i></button>
+  <button id="lb-next" class="lb-btn right-3 md:right-6 top-[calc(50%-1.5rem)]" aria-label="Następne zdjęcie"><i data-lucide="chevron-right" class="w-5 h-5"></i></button>
+  <figure>
+    <img id="lb-img" src="" alt="">
+    <figcaption id="lb-cap"></figcaption>
+  </figure>
+</div>
+
+<script src="main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
